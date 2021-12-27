@@ -1,0 +1,11 @@
+sdd 测试d
+gistID:331c0846c9a4bcbf89eb0c62c8ba56ee
+Token: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
+修改的Kbuild位置:/lib/modules/5.11.0-43-generic/build/Kbuild 
+新增:ldflags-y += -T$(src)/khook/engine.lds
+
+来自：https://blog.csdn.net/qq_41989372/article/details/85128271
+git config --global user.name "YOhonour"
+git config --global user.email "1083775096@qq.com"
+ssh-keygen -t rsa
+cat /home/lyu/.ssh/id_rsa.pub
