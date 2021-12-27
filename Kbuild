@@ -1,4 +1,4 @@
-MODNAME		?= khook-demo
+MODNAME		?= myHook
 
 obj-m		+= $(MODNAME).o
 $(MODNAME)-y	+= main.o

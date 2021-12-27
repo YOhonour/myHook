@@ -3,7 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}",
                 "/lib/modules/5.11.0-43-generic/build/include", 
                 "/usr/include",
                 "/usr/include/x86_64-linux-gnu",
@@ -15,7 +15,8 @@
                 "/usr/include/linux",
                 "/usr/src/linux-headers-5.11.0-43-generic/include",
                 "/usr/src/linux-headers-5.11.0-43-generic/arch/x86/include",
-                "/usr/src/linux-headers-5.11.0-43-generic/arch/x86/include/generated"
+                "/usr/src/linux-headers-5.11.0-43-generic/arch/x86/include/generated",
+                "/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/uapi"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/cpp",
