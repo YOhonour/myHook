@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "engine.h": "c",
+        "kernel.h": "c",
+        "byteorder.h": "c",
+        "fs.h": "c"
+    }
+}
