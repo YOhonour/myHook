@@ -9,3 +9,6 @@ git config --global user.name "YOhonour"
 git config --global user.email "1083775096@qq.com"
 ssh-keygen -t rsa
 cat /home/lyu/.ssh/id_rsa.pub
+
+内核源码目录：
+/usr/src/linux-headers-5.11.0-43-generic

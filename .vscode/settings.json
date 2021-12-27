@@ -4,6 +4,7 @@
         "engine.h": "c",
         "kernel.h": "c",
         "byteorder.h": "c",
-        "fs.h": "c"
+        "fs.h": "c",
+        "socket.h": "c"
     }
 }

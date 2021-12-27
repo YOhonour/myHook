@@ -1,1 +1,0 @@
-cmd_/home/lyu/桌面/C/myHook/myHook.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/lyu/桌面/C/myHook/myHook.ko /home/lyu/桌面/C/myHook/myHook.o /home/lyu/桌面/C/myHook/myHook.mod.o;  true
