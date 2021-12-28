@@ -89,7 +89,11 @@ find: ‘/run/user/1000/gvfs’: 权限不够
         sudo vim /etc/netplan/01-network-manager-all.yaml
     2.重启服务
         sudo netplan --debug apply
-        
+
     参考: 
         https://blog.csdn.net/weixin_45468845/article/details/106458371
         https://blog.csdn.net/IndexMan/article/details/96578242
+git add
+git restore
+git commit 
+git push origin master
