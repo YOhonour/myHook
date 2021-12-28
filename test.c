@@ -5,6 +5,6 @@ int main(){
     int a = 0;
     printf("Hello world!\n==========================================\n");
     a++;
-    123;
+    p2rin23tf1(s);
     return a;
 }

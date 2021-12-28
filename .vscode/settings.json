@@ -5,7 +5,8 @@
         "kernel.h": "c",
         "byteorder.h": "c",
         "fs.h": "c",
-        "socket.h": "c"
-    },
-    "C_Cpp.errorSquiggles": "Disabled"
+        "socket.h": "c",
+        "iostream": "cpp",
+        "netdevice.h": "c"
+    }
 }

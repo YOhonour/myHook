@@ -12,3 +12,84 @@ cat /home/lyu/.ssh/id_rsa.pub
 
 内核源码目录：
 /usr/src/linux-headers-5.11.0-43-generic
+
+sudo grep dev_queue_xmit -Inrw / --include=*.h
+
+lyu@ubuntu:/usr/src/linux-headers-5.11.0-43-generic/net$ sudo grep dev_queue_xmit -Inrw / --include=*.h
+[sudo] lyu 的密码： 
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/linux/netdevice.h:96: * the driver transmit return codes are consumed by dev_queue_xmit(), and all
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/linux/netdevice.h:2883:int dev_queue_xmit(struct sk_buff *skb);
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/linux/if_team.h:239:	return dev_queue_xmit(skb);
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/net/neighbour.h:499:	return dev_queue_xmit(skb);
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/net/dn_route.h:99:	dev_queue_xmit(skb);
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/include/net/cls_cgroup.h:61:	 * This test assumes that all callers of dev_queue_xmit() explicitly
+/usr/src/linux-headers-5.4.0-26/include/linux/netdevice.h:90: * the driver transmit return codes are consumed by dev_queue_xmit(), and all
+/usr/src/linux-headers-5.4.0-26/include/linux/netdevice.h:2636:int dev_queue_xmit(struct sk_buff *skb);
+/usr/src/linux-headers-5.4.0-26/include/linux/if_team.h:242:	return dev_queue_xmit(skb);
+/usr/src/linux-headers-5.4.0-26/include/net/sch_generic.h:1291:		ret = dev_queue_xmit(skb);
+/usr/src/linux-headers-5.4.0-26/include/net/neighbour.h:499:	return dev_queue_xmit(skb);
+/usr/src/linux-headers-5.4.0-26/include/net/dn_route.h:99:	dev_queue_xmit(skb);
+/usr/src/linux-headers-5.4.0-26/include/net/cls_cgroup.h:56:	 * This test assumes that all callers of dev_queue_xmit() explicitly
+
+
+lyu@ubuntu:/usr/src/linux-headers-5.11.0-43-generic/net$ sudo find / -name "delay.h" | grep asm/delay
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/nios2/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/parisc/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/ia64/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/powerpc/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/nds32/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/alpha/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/s390/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/arc/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/riscv/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/xtensa/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/hexagon/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/sparc/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/openrisc/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/um/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/mips/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/m68k/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/x86/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/microblaze/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/arm/include/asm/delay.h
+/usr/src/linux-hwe-5.11-headers-5.11.0-43/arch/c6x/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/nios2/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/parisc/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/ia64/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/powerpc/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/nds32/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/alpha/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/s390/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/arc/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/unicore32/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/riscv/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/xtensa/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/hexagon/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/sparc/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/openrisc/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/mips/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/m68k/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/x86/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/microblaze/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/arm/include/asm/delay.h
+/usr/src/linux-headers-5.4.0-26/arch/c6x/include/asm/delay.h
+find: ‘/run/user/1000/doc’: 权限不够
+find: ‘/run/user/1000/gvfs’: 权限不够
+
+
+查看printk
+    dmesg | grep ljh
+安装ko
+    sudo insmod myHook.ko 
+卸载ko
+    sudo rmmod myHook.ko
+
+配置静态IP
+    1.修改配置文件
+        sudo vim /etc/netplan/01-network-manager-all.yaml
+    2.重启服务
+        sudo netplan --debug apply
+        
+    参考: 
+        https://blog.csdn.net/weixin_45468845/article/details/106458371
+        https://blog.csdn.net/IndexMan/article/details/96578242
