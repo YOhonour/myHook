@@ -6,5 +6,6 @@
         "byteorder.h": "c",
         "fs.h": "c",
         "socket.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
