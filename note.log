@@ -95,5 +95,21 @@ find: ‘/run/user/1000/gvfs’: 权限不够
         https://blog.csdn.net/IndexMan/article/details/96578242
 git add
 git restore
-git commit 
+git commit
+
 git push origin master
+修改VScode资源管理器的字体大小:
+    在/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.css
+    中搜索".monaco-workbench .part>.content{font-size:"
+    修改为17px
+    参考:https://blog.csdn.net/qq_41176055/article/details/105451333
+
+参考packAnalase文件下的代码，解析以太网报文数据
+再在目标sk_buff上操作
+    参考:
+        https://www.cnblogs.com/zfyouxi/p/4560841.html
+        https://blog.csdn.net/viewsky11/article/details/53134008
+        https://www.cnblogs.com/s2603898260/p/14624366.html
+
+注意: 编写内核代码需要严格遵循: 变量定义必须在逻辑处理之前!
+    ----来自insmod 后虚拟机死机的排查，因为使用sh脚本编译+安装，没有注意到编译错误
